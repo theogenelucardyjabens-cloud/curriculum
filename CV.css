@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+html{
+    scroll-behavior:smooth;
+    
+}
+body{
+    padding: 6%;
+    padding-top: 0%;
+}
+
+.nav{
+    /* border: 2px solid black;     */
+    width:100%;
+    background-color: rgba(129, 129, 130, 0.866); 
+    position: fixed;
+    top: 0%;
+    left: 0px;
+    z-index: 1000; /*valeur élevée pour passer au-dessus */
+
+}
+
+/* :root { --header-height: 70px; } */
+
+section {
+  scroll-margin-top: 70px;
+}
+.ulNav{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    
+}
+.ulNav li{
+    margin:1rem;
+}
+.ulNav li a:hover{
+   background-color: #fdfdfd;
+   padding: 6px;
+   border-radius: 30px;
+   transform: scale(1.05);
+}
+.ulNav li a{
+    text-decoration: none;
+    color: rgb(26, 25, 26); 
+    transition: transform 0.5s;
+}
+
+.ulNav #T a{
+    padding: 8px;
+    /* border: 2px solid black; */
+    background-color: rgb(86, 86, 86);
+    color: white;
+    border-radius: 30px;
+}
+.ulNav #A a{
+    padding: 6px;
+    background-color: rgba(122, 109, 109, 0.162);
+    border-radius: 30px;
+}
+
+/* accueil */
+#Accueil{
+    /* border: 2px solid black; */
+    height: auto;
+    width: 100%;
+    margin-top: 52px;
+    box-shadow: 1px 1px 10px rgb(164, 164, 228);
+}
+.p-A{
+    text-align: center;
+    padding: 20px;
+    width: 70%;
+    margin-left: 100px;
+    font-size: 20px; 
+}
+.cont-A{
+    display: flex;
+    margin: 30px;
+}
+.cont-A .cont-tx1{
+    /* border: 2px solid black; */
+    margin-left:100px;  
+}
+#fo{
+    color: rgb(43, 96, 128);
+}
+
+.cont-A .img1{
+   width: 206px;
+   height: 206px;
+   object-fit:cover;
+   box-shadow: 1px 1px 10px rgb(164, 164, 228);
+   border-radius: 50%;
+   margin-top: 10px;
+   
+   
+}
+
+ .cont-A .cont-tx1 h1{
+    color: rgb(68, 50, 50);
+    text-align: center;
+    margin-top: 20px;
+ }
+ .cont-A .cont-tx1 h3{
+    color: rgb(68, 50, 50);
+    text-align: center;
+ }
+ .cont-A .cont-tx1 h3{
+    margin-top: 40px;
+ }
+ .cont-A .cont-tx1 .info{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(68, 50, 50); 
+ }
+ .cont-A .cont-tx1 .info h4{
+    margin-top: 10px; 
+ }
+ .cont-A .cont-tx1 .info h4 a{
+    text-decoration: none;
+    color: rgb(68, 50, 50);
+ }
+
+ .first{
+    margin-left: 30px;
+    color: rgb(68, 50, 50); 
+ }
+ .span-E{
+    font-style: italic;
+    margin-left: 5px;
+
+ }
+
+/* Formation */
+
+#Formation{
+    /* border: 2px solid black; */
+    height: auto;
+    width: 100%;
+   box-shadow: 1px 1px 10px rgb(164, 164, 228);
+    
+}
+#Formation .card{
+    height: auto;
+    width: 90% ;
+    /* border: 2px solid black;  */
+    
+}
+#Formation .cont-F{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 30px;
+    
+     
+}
+#Formation .cont-F #h3-F{
+   font-size: 20px;
+   margin-left: 40px;  
+}
+#Formation .cont-F ul li{
+    margin-left: 70px; 
+    font-size: 20px;
+}
+
+/* Experiences */
+#Experiences{
+    /* border: 2px solid black; */
+    height: auto;
+    width: 100%;
+    margin-left: 30px auto;
+   box-shadow: 1px 1px 10px rgb(164, 164, 228);
+}
+
+#Experiences .h3-ex{
+    margin: 20px;
+    font-size: 20px;
+    margin-left: 70px; 
+}
+#Experiences .E{
+    margin-left: 90px;
+    font-size: 20px;
+    width: 50%;
+   
+    /* text-align:center; */
+}
+#Experiences .cont-pa{
+    /* border: 2px solid blue; */
+    width: 100%;
+    
+}
+
+/* Competences */
+  #Competences{
+    /* border: 2px solid black; */
+    height: auto;
+    width: 100%;
+    margin-left: 30px auto;
+   box-shadow: 1px 1px 10px rgb(164, 164, 228);
+}
+#Competences .P-com{
+    margin-left: 90px;
+    font-size: 20px;
+    /* border: 2px solid black; */
+    
+   
+}
+
+#Competences .h3-com{
+    margin: 20px;
+    font-size: 20px;
+    margin-left: 70px; 
+    
+    
+}
+#Competences .cont-compto{
+    display:flex;
+    
+}
+#Competences .cont-compto .comp-lan{
+    width:60%;
+    /* border: 2px solid black; */
+    /* box-shadow: 1px 1px 10px rgb(164, 164, 228); */
+    height: 200px;
+}
+
+
+
+/* Contact */
+#Contact{
+    /* border: 2px solid black; */
+    height: 650px;
+    width: 100%;
+    margin-left: 30px auto;
+   box-shadow: 1px 1px 10px rgb(164, 164, 228);
+}
+form{
+    width: 70%;
+    margin-top: 30px;
+    /* background-color: rgb(197, 196, 196); */
+    margin: 40px auto;
+    box-shadow: 1px 1px 10px rgb(164, 164, 228);
+
+}
+ 
+.h1-mul{
+    text-align: center;
+    padding: 10px;
+    color: rgb(68, 50, 50); 
+}
+form .corps-f{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom:10px;
+}
+
+form button{
+    color: rgb(2, 2, 2);
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(152, 152, 154);
+    cursor: pointer;
+    font-size: 15px;
+    transition: transform 0.5s;
+    margin-left: 20px;
+    
+    
+}
+form button:hover{
+    transform: scale(1.05);
+    background-color: rgb(191, 196, 220);
+
+}
+
+form .h1-mul{
+    font-size: 20px;
+}
+form .separ{
+    width: 100%;
+    height: 4px;
+    background-color: rgb(134, 134, 136);
+}
+form .corps-f .groupe{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+form .corps-f .gauche .groupe input{
+    margin-top: 5px;
+    padding:10px 5px 10px 30px;
+    border:1px solid  #c9c9c9;
+    outline-color:rgb(100, 100, 163);
+    border-radius: 10px;
+    width: 100%;
+   
+}
+form .corps-f label{
+    color: rgb(68, 50, 50); 
+}
+form .corps-f .gauche .groupe i{
+    position:absolute;
+    left: 0;
+    top: 25px;
+    padding: 9px 8px;
+    color: rgb(100, 100, 126);
+}
+form .corps-f .droite{
+    margin-left: 30px;
+
+}
+form .corps-f .droite .groupe {
+    height: 100%;
+}
+form .corps-f .droite .groupe textarea {
+    margin-top: 5px;
+    padding: 10px;
+    /* background-color: rgb(215, 230, 239); */
+    border: 2px solid rgb(158, 158, 174);
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    height:86%;
+    width: 100%;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* telefon */
+ @media (max-width: 768px) {
+    
+    .cont-A{
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    margin-top:305px;
+}
+
+ .cont-tx1{
+    margin-right: 6rem;
+ }
+
+ #Formation .cont-F{
+    flex-direction: column;
+ }
+ .ulNav{
+    flex-direction: column;
+   
+ }
+ #Accueil .p-A{
+    margin-left: 60px;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+
+ }
+ 
+section {
+  scroll-margin-top: 300px;
+}
+form .corps-f .droite{
+    margin-left:10px;
+}
+form .corps-f{
+    margin-bottom:10px;
+}
+form{
+     border-radius: 30px;
+    font-size: 15px;
+}
+#Competences .cont-compto{
+    flex-direction:column;
+    /* border: 2px solid black; */
+    
+}
+#Competences .cont-compto .cont-comp1 .comp .P-com{
+    /* color: blue; */
+    margin-right: 30px;
+
+}
+#Competences .cont-compto .comp-lan{
+    width:100%;
+    /* border: 2px solid black; */
+}
+#Competences .P-com{
+    margin-left: 90px;
+    font-size: 20px;
+    /* border: 2px solid black; */
+    
+   
+}
+
+}
+
+/* Tablèt  */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+     background-color: #fdfdfd;
+  }
+.cont-A .cont-tx1 h1{
+    color: rgb(68, 50, 50);
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+ }
+ form .corps-f .droite{
+    margin-left:30px;
+}
+form{
+    width: 70%;
+    margin-top: 30px;
+    background-color: rgb(238, 236, 236);
+    margin: 40px auto;
+    border-radius: 30px;
+    font-size: 15px;
+}
+#Competences .cont-compto{
+    flex-direction:column;
+    
+}
+.p-A{
+    margin-left: 90px;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    
+ }
+  
+}
+
+/* Laptop/Desktop */
+@media (min-width: 1025px) {
+  body {
+    font-size: 16px;
+    background-color: #fdfdfd;
+  }
+  form{
+    width: 600px;
+    margin-top: 30px;
+    /* background-color: rgb(243, 239, 239); */
+    margin: 40px auto;
+    border-radius: 30px;
+    font-size: 15px;
+}
+}
